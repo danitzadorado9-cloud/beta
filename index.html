@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Urbano Raiz: Moda con Identidad</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header>
+    <h1>Urbano Raiz: Moda con Identidad</h1>
+    <p>Moda Urbana para Damas y Varones</p>
+</header>
+
+<nav>
+    <a href="#" onclick="mostrarSeccion('inicio')">Inicio</a>
+    <a href="#" onclick="mostrarSeccion('carrito')">Carrito</a>
+    <a href="#" onclick="mostrarSeccion('contacto')">Contacto</a>
+</nav>
+
+<section id="inicio" class="active">
+    <h2>Bienvenidos a Urbano Raiz: Moda con Identidad</h2>
+    <p>Descubre Variedad de Modelos y Encuentra tu Estilo en cada Prenda.</p>
+    <img src="Logo de Urbano Raíz.JPEG.png" width="300" style="border-radius:10px;">
+    <br><br>
+    <button onclick="mostrarSeccion('Catalogo')">Ver Catálogo</button>
+</section>
+
+<section id="Catalogo">
+    <h2>Catálogo de Productos</h2>
+
+    <h3>Sudaderas Damas y Varones</h3>
+    <div class="fila">
+        <div class="producto">
+            <img src="Sudaderas Varon Ficon.jpg" alt="Sudaderas Varon Ficon">
+            <h4>Sudaderas Varon Ficon</h4>
+            <p>Bs. 90</p>
+            <button onclick="agregarCarrito('Sudaderas VAron Ficon', 90)">Agregar al carrito</button>
+        </div>
+        <div class="producto">
+            <img src="Sudaderas Sofisticadas.jpg" alt="Sudaderas Sofisticadas">
+            <h4>Sudaderas Sofisticadas</h4>
+            <p>Bs. 70</p>
+            <button onclick="agregarCarrito('Sudaderas Sofisticadas', 70)">Agregar al carrito</button>
+        </div>
+        <div class="producto">
+            <img src="Sudaderas Buddy.jpg" alt="Sudaderas Buddy">
+            <h4>Sudaderas Buddy</h4>
+            <p>Bs. 120</p>
+            <button onclick="agregarCarrito('Sudaderas Buddy', 120)">Agregar al carrito</button>
+        </div>
+    </div>
+
+    <h3>Camisetas Damas y Varones</h3>
+    <div class="fila">
+        <div class="producto">
+            <img src="Camisetas Urban.jpg" alt="Camisetas Urban">
+            <h4>Camisetas Urban</h4>
+            <p>Bs. 120</p>
+            <button onclick="agregarCarrito('Camisetas Urban', 120)">Agregar al carrito</button>
+        </div>
+        <div class="producto">
+            <img src="Camisetas Shutterstock.jpg" alt="Camisetas Shutterstock">
+            <h4>Camisetas Shutterstock</h4>
+            <p>Bs. 90</p>
+            <button onclick="agregarCarrito('Camisetas Shutterstock', 90)">Agregar al carrito</button>
+        </div>
+        <div class="producto">
+            <img src="Camisetas Casuales.jpg" alt="Camisetas Casuales">
+            <h4>Camisetas Casuales</h4>
+            <p>Bs. 70</p>
+            <button onclick="agregarCarrito('Camisetas Casuales', 70)">Agregar al carrito</button>
+        </div>
+    </div>
+
+    <h3>Variedad de Gorras</h3></h3>
+    <div class="fila">
+        <div class="producto">
+            <img src="Buena Vibra.jpg" alt="Buena Vibra">
+            <h4>Buena Vibra</h4>
+            <p>Bs. 120</p>
+            <button onclick="agregarCarrito('Buena Vibra', 120)">Agregar al carrito</button>
+        </div>
+        <div class="producto">
+            <img src="Visera Plana.jpg" alt="Visera Plana">
+            <h4>Visera Plana</h4>
+            <p>Bs. 90</p>
+            <button onclick="agregarCarrito('Visera Plana', 90)">Agregar al carrito</button>
+        </div>
+        <div class="producto">
+            <img src="Full Caps.png" alt="Full Caps">
+            <h4>Full Caps</h4>
+            <p>Bs. 150</p>
+            <button onclick="agregarCarrito('Full Caps', 150)">Agregar al carrito</button>
+        </div>
+    </div>
+</section>
+
+<section id="carrito">
+    <h2>🛒 Tu Carrito</h2>
+    <ul id="listaCarrito" class="carrito-lista"></ul>
+    <h3 id="total">Total: Bs. 0</h3>
+    <button onclick="vaciarCarrito()">Vaciar carrito</button>
+    <button onclick="alert('¡Gracias por tu compra! ❤️')">Finalizar compra</button>
+</section>
+
+<section id="contacto">
+    <h2>📞 Contáctanos</h2>
+
+    <p><strong>Correo electrónico:</strong></p>
+    <a href="https://mail.google.com/mail/?view=cm&fs=1&to=encantoartesanal.tdd@gmail.com" target="_blank">
+        ✉ Enviar correo
+    </a>
+
+    <p><strong>WhatsApp:</strong></p>
+    <a href="https://wa.me/message/W43JGBWSI6DOL1" target="_blank">📱 Hacer clic para escribir</a>
+
+    <p><strong>Facebook:</strong></p>
+    <a href="https://www.facebook.com/share/16bczzoNs9/" target="_blank">📘 Ir a Facebook</a>
+
+    <p><strong>Instagram:</strong></p>
+    <a href="https://www.instagram.com/encanto_artesanal258?igsh=MWJpeHh3YXZ3Nnl5ag==" target="_blank">📷 Ir a Instagram</a>
+</section>
+
+<footer>
+    <p>© 2025 Urbano Raiz: Moda con Identidad | Creado por Yusara y Jose Adhemar</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
+
